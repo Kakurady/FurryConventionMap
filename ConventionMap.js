@@ -46,10 +46,10 @@ function is_in_japan(lat, lng){
 var is_phone = false;
 
 // Used later when creating markers
-var redIcon = new google.maps.MarkerImage("//www.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png");
-var purpleIcon = new google.maps.MarkerImage("//www.google.com/intl/en_us/mapfiles/ms/micons/purple-dot.png");
-var blueIcon = new google.maps.MarkerImage("//www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png");
-var markerShadow = new google.maps.MarkerImage("//maps.gstatic.com/intl/en_us/mapfiles/markers/marker_sprite.png", new google.maps.Size(37,34), new google.maps.Point(20, 0), new google.maps.Point(10, 34)); 
+//var redIcon = L.icon({iconUrl:"http://www.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png"});
+//var purpleIcon = L.icon({iconUrl:"http://www.google.com/intl/en_us/mapfiles/ms/micons/purple-dot.png"});
+//var blueIcon = L.icon({iconUrl:"http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png"});
+//var markerShadow = new google.maps.MarkerImage("//maps.gstatic.com/intl/en_us/mapfiles/markers/marker_sprite.png", new google.maps.Size(37,34), new google.maps.Point(20, 0), new google.maps.Point(10, 34)); 
 
 function load() {
  var useragent = navigator.userAgent;
@@ -71,16 +71,21 @@ markers = [];
 // Set initial position
 // These values are assuming a 1280x800 monitor with 96dpi.
 // it would be nice to scale this according to client area size
-var centerLatLng = new google.maps.LatLng(40,-40);
+var centerlatLng = L.latLng(40,-40);
 var mapOpts = {
     zoom: 3,
-    center: centerLatLng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    streetViewControl: true
+    center: centerlatLng,
+    closePopupOnClick: false
 };
 // creating map
-map = new google.maps.Map(mapNode, mapOpts);
-infoWindow = new google.maps.InfoWindow({});
+map = L.map(mapNode, mapOpts);
+//map.setView([51.505, -0.09], 13);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+infoWindow = L.popup({});
 
 // Add map points
 // Format: addLocation(latitude, longitude, 'Name', 'website', 'Place name<br>Street<br>City, State Code<br>Country', 'Phone Number', 'Mon[th] 1-3 20XX', attendance);
@@ -303,15 +308,15 @@ document.getElementById("filter").onchange = function(){
 
         //only show those that pass filter_func
         visible = filter_func(meet.lat, meet.lng);
-        meet.marker.setVisible(visible);
+        //meet.marker.setVisible(visible);
         meet.li.style.display = visible ? "": "none";
 
         if (visible) {
             if (bounds){
-                bounds.extend(meet.marker.getPosition());
+                bounds.extend(meet.marker.getLatLng());
             } else {
-            pos = meet.marker.getPosition();
-            bounds = new google.maps.LatLngBounds(pos, pos);
+            pos = meet.marker.getLatLng();
+            bounds = L.latLngBounds(pos, pos);
             }
         }
     }
@@ -382,21 +387,23 @@ function addLocation1(a, f) {
 
         //make the marker
         markerOpts = {
-            position: new google.maps.LatLng(a.lat, a.lng),
-            map: map,
             title: name
         }
 
-        markerOpts.icon = (a.attendance >= 1000 ? redIcon : (a.attendance >= 200 ? purpleIcon : blueIcon ) );
-        markerOpts.shadow = markerShadow;
+        //markerOpts.icon = (a.attendance >= 1000 ? redIcon : (a.attendance >= 200 ? purpleIcon : blueIcon ) );
+//        markerOpts.shadow = markerShadow;
         markerOpts.title = a.name;
 
-        a.marker = new google.maps.Marker(markerOpts);
+        a.marker = L.marker([a.lat, a.lng], markerOpts);
         fn =  function() {
-            infoWindow.setContent(getLocationHTML(a.name, a.url, a.address, a.tel, a.date, a.attendance));
-            infoWindow.open(map, a.marker);
+            if(!map.getBounds().contains([a.lat, a.lng])){
+                map.panTo([a.lat, a.lng]);
+            }
+            a.marker.bindPopup(getLocationHTML(a.name, a.url, a.address, a.tel, a.date, a.attendance));
+            a.marker.openPopup();
         }
-        google.maps.event.addListener(a.marker, "click",fn);
+        a.marker.on("click",fn);
+        a.marker.addTo(map);
         
         link = document.createElement("A");
         link.innerHTML = f(a);
