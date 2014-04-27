@@ -81,9 +81,42 @@ var mapOpts = {
 map = L.map(mapNode, mapOpts);
 //map.setView([51.505, -0.09], 13);
 
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var layerOSMStandard = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+var layerMapQuestOpen = L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.jpg',{
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors. Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">',
+    subdomains: '1234'
+});
+var layerMapQuestOpenSat = L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg',{
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors. Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">. Portions Courtesy NASA/JPL-Caltech and U.S. Depart. of Agriculture, Farm Service Agency',
+    subdomains: '1234'
+});
+var layerOSMHumanitarian = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+var layerOpenCycleMap = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
+    attribution: 'Map &copy; <a href="http://www.thunderforest.com/">ThunderForest</a>, Map data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+var layerThunderforestTransport = L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png', {
+    attribution: 'Map &copy; <a href="http://www.thunderforest.com/">ThunderForest</a>, Map data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+var layerThunderforestOutdoors = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
+    attribution: 'Map &copy; <a href="http://www.thunderforest.com/">ThunderForest</a>, Map data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+L.control.layers({
+    "OpenStreetMap Standard": layerOSMStandard,
+    "OpenStreetMap Humanitarian": layerOSMHumanitarian,
+    "MapQuest Open": layerMapQuestOpen,
+    "MapQuest Open Aerial": layerMapQuestOpenSat,
+    "Thunderforest OpenCycleMap": layerOpenCycleMap,    //any useful?
+    "Thunderforest Public Transport": layerThunderforestTransport,
+//    "Thunderforest Outdoors": layerThunderforestOutdoors  (too slow)
 }).addTo(map);
+L.control.scale().addTo(map);
+
+layerOSMStandard.addTo(map);
 
 infoWindow = L.popup({});
 
