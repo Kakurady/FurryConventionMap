@@ -393,6 +393,9 @@ function addLocation1(a, f) {
 
         a.marker = new google.maps.Marker(markerOpts);
         fn =  function() {
+            if (!map.getBounds().contains(a.marker.getPosition())){
+                map.panTo(a.marker.getPosition());
+            }
             infoWindow.setContent(getLocationHTML(a.name, a.url, a.address, a.tel, a.date, a.attendance));
             infoWindow.open(map, a.marker);
         }
