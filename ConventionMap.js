@@ -421,7 +421,6 @@ function addLocation1(a, f) {
 
         //make the marker
         markerOpts = {
-            position: new google.maps.LatLng(a.lat, a.lng)
         }
 
         //markerOpts.icon = (a.attendance >= 1000 ? redIcon : (a.attendance >= 200 ? purpleIcon : blueIcon ) );
