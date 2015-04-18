@@ -1,6 +1,6 @@
 // This powers the <span class="plainlinks">[http://en.wikifur.com/FurryConventionMap.html map of active conventions]</span>. Edit events in the "Add map points" section below. 
 
-// To get latitude and longitude, find the target on Google Maps, then click the link button, copy it into a text editor (like Notepad), and use the numbers after 'll='. 
+// To get latitude and longitude, find the target on Google Maps, then click the cog and Share (or check the URL) and copy the first two numbers after the '@' (including the decimal bits). 
 
 // Reload the map to check it works after you edit! If there's an apostrophe in a name or location, put a backslash (\) in front of it.<pre>
 
@@ -122,93 +122,105 @@ infoWindow = L.popup({});
 
 // Add map points
 // Format: addLocation(latitude, longitude, 'Name', 'website', 'Place name<br>Street<br>City, State Code<br>Country', 'Phone Number', 'Mon[th] 1-3 20XX', attendance);
-addLocation(-24.265278,-48.406944, 'Abando', 'abando.com.br', 'Parque Estadual Intervales<br>São Roque, São Paulo<br>Brazil', '', 'Mar 1-4 2013', 55);
+addLocation(33.548246, -112.046348, 'Arizona Fur Con', 'Arizonafurcon.com', 'Pointe Hilton Squaw Peak Resort<br>N 16th St<br>Phoenix, Arizona 85020<br>USA', '1(602) 997-2626', 'Oct 31-Nov 2 2014', 533);
+addLocation(-24.265278,-48.406944, 'Abando', 'abando.com.br', 'Parque Estadual Intervales<br>São Roque, São Paulo<br>Brazil', '', 'Feb 14-17 2015', 73);
 //addLocation(-37.891950, -57.832850, 'Animales Sueltos', 'furrycamp.com.ar', 'Camping \'La Serranita\'<br>barrio Colinas Verdes<br>Mar del Plata<br>Argentina', '', 41);
-addLocation(40.444334, -79.995532, 'Anthrocon', 'www.anthrocon.org', 'Westin Convention Center Pittsburgh<br>1000 Penn Avenue<br>Pittsburgh, Pennsylvania 15222<br>USA', '+1 (412) 281-3700', 'Jul 3-6 2014', '5577');
-addLocation(52.597652, 13.22226, 'BerliCon', 'www.berlicon.org', 'Zeltlagerplatz e.V.<br>Rallenweg 4,13505 Berlin-Heiligensee<br>Germany', '', 'Jun 12-15 2014', 89);
-addLocation(39.523177, -119.78106, 'Biggest Little Fur Con', 'www.biggestlittlefurcon.org', 'Grand Sierra Resort<br>2500 East 2nd Street<br>Reno, Nevada 89595<br>USA', '+1 (77) YEAH-BLFC', 'Mar 28-30 2014', '704');
+addLocation(42.353979, -71.105356, 'Anthro New England', 'www.anthronewengland.org', 'Hyatt Regency Cambridge, Overlooking Boston<br>575 Memorial Dr<br>Cambridge, MA<br>USA', '1(617) 492-1234', 'Feb 27-Mar 1 2015', 0);
+addLocation(40.444334, -79.995532, 'Anthrocon', 'www.anthrocon.org', 'Westin Convention Center Pittsburgh<br>1000 Penn Avenue<br>Pittsburgh, Pennsylvania 15222<br>USA', '+1 (412) 281-3700', 'Jul 9-12 2015', '5861');
+addLocation(52.597652, 13.22226, 'BerliCon', 'www.berlicon.org', 'Zeltlagerplatz e.V.<br>Rallenweg 4,13505 Berlin-Heiligensee<br>Germany', '', 'Jun 18-21 2015', 89);
+addLocation(39.523177, -119.78106, 'Biggest Little Fur Con', 'www.biggestlittlefurcon.org', 'Grand Sierra Resort<br>2500 East 2nd Street<br>Reno, Nevada 89595<br>USA', '+1 (77) YEAH-BLFC', 'May 14-17 2015', '1442');
 //addLocation(61.599498,   9.750860, 'CabinCon', 'swandog.livejournal.com', 'Vinstra<br>Norway', '');//not on list, website is private
 //addLocation(39.077092, -74.830348, 'Cape May Fur Meet', 'capemayfurmeet.com', 'Middle Township Elementary School #2<br>101 West Pacific Ave, Cape May Court House<br>Middle, New Jersey 08210<br>USA', '', 'May 19-20 2012', 3);
-addLocation(33.679673,-117.852488, 'Califur', 'califur.com', 'Irvine Marriott<br>18000 Von Karman Avenue<br>Irvine, California, 92614<br>USA', '+1 (949) 553-0100', 'May 30-Jun 1 2014', 1178);
-addLocation(43.721056,-121.291552, 'Campfire Tails', 'campfiretails.com', 'Ogden Group Camp C<br>Paulina Lake<br>La Pine, Oregon<br>USA', '', 'Aug 1-5 2012', 143);
+addLocation(33.679673,-117.852488, 'Califur', 'califur.com', 'Irvine Marriott<br>18000 Von Karman Avenue<br>Irvine, California, 92614<br>USA', '+1 (949) 553-0100', 'Jun 5-7 2015', 1206);
+addLocation(43.721056,-121.291552, 'Campfire Tails', 'campfiretails.com', 'Ogden Group Camp C<br>Paulina Lake<br>La Pine, Oregon<br>USA', '', 'Jul 31-Aug 4 2014', 143);
 //addLocation(44.858188, -93.221054, 'Cat Days', 'www.mnfurs.org/cat-days', 'Crowne Plaza Hotel and Suites<br>Minneapolis International Airport<br>Appletree Square<br>Bloomington, MN 55425<br>USA', '+1 877-859-5095', 'Aug 3-4 2012');
 //addLocation(38.9439, -95.3385, 'Central Midwest Furmeet', 'cmfurmeet.webs.com', ' Bloomington West Group Camp at Clinton Lake near Lawrence, Kansas', '', 'Sep 14-16 2012', 22);
 addLocation(49.638649,  15.298977, 'ČeSFuR', 'www.cesfur.org', 'Hotel Luna<br>Kouty 77<br>584 01 Kouty<br>Czech Republic', '', 'Jun 27-30 2013', 107);
 addLocation(50.94149, 6.94651, 'Cologne Furdance', 'www.cologne-cfd.de', 'Zeughaus24, Zeughausstraße 24, 50667 Köln, Germany', '', 'Nov 10 2012'); //Colonge Fur-Dance, Germany, June/November
-addLocation(42.930358, -81.218609, 'Condition', 'www.conditionfurry.ca', 'Four Points Sheraton<br>1150 Wellington Road South<br>London, Ontario N6E 1M3<br>Canada', '+1 (519) 681-0600', 'Aug 2-4 2013', 251);
-addLocation(-37.825497,144.951725, 'ConFurgence', 'confurgence.com', 'Hilton South Wharf<br>2 Convention Centre Place<br>South Wharf, Melbourne<br>Australia 3006', '+61-3-9027-2000', 'Jan 10-12 2014', 474);
-addLocation(52.450713,  -1.715519, 'ConFuzzled', 'confuzzled.org.uk', 'Hilton Birmingham Metropole<br>National Exhibition Centre<br>Birmingham B40 1PP<br>United Kingdom', '+44 (0)121 780-4242', 'May 23-27 2014', 873);
-addLocation(42.150821, -87.911611, 'Duckon', 'www.duckon.org', 'Westin Chicago North Shore<br>601 N. Milwaukee Avenue<br>Wheeling, IL 60090<br><br>United States', '+1 (847) 777-6500', 'Jun 6-8 2013');
+addLocation(42.930358, -81.218609, 'Condition', 'www.conditionfurry.ca', 'Four Points Sheraton<br>1150 Wellington Road South<br>London, Ontario N6E 1M3<br>Canada', '+1 (519) 681-0600', 'Aug 1-3 2014', 251);
+addLocation(-37.825497,144.951725, 'ConFurgence', 'confurgence.com', 'Hilton South Wharf<br>2 Convention Centre Place<br>South Wharf, Melbourne<br>Australia 3006', '+61-3-9027-2000', 'Jan 8-11 2015', 544);
+addLocation(52.450713,  -1.715519, 'ConFuzzled', 'confuzzled.org.uk', 'Hilton Birmingham Metropole<br>National Exhibition Centre<br>Birmingham B40 1PP<br>United Kingdom', '+44 (0)121 780-4242', 'May 22-26 2015', 873);
+addLocation(42.150821, -87.911611, 'Duckon', 'www.duckon.org', 'Westin Chicago North Shore<br>601 N. Milwaukee Avenue<br>Wheeling, IL 60090<br><br>United States', '+1 (847) 777-6500', 'Jun 19-21 2015');
 addLocation(51.689585, 11.274526, 'EAST', 'www.east-convention.de.vu', 'DJH Falkenstein/Harz<br>Falkensteiner Weg 2b<br>06463 Falkenstein/Harz<br>Germany', '+49 034743 8257', 'Sep 19-22 2013');
 addLocation(28.33704,-81.587777, 'Elliott\'s Live Events', 'ele.furryhost.com', 'Radisson Resort Worldgate<br>3011 Maingate Lane, Kissimmee, FL 34747, United States','', "Year-round", 215);//May21-23, Aug7-8, Oct30-31
-addLocation(52.129813, 11.631281, 'Eurofurence', 'eurofurence.org', 'Maritim Hotel Magdeburg<br>Otto-von-Guericke-Straße 87<br>39104 Magdeburg<br>Germany', '+49 (0) 3915949-0', 'Aug 21-25 2013', 1376);
-addLocation(40.703546, -74.184279, 'FA: United', 'faunited.org', 'Hanover Marriott<br>1401 Rt 10 E<br>Whippany, NJ 07981<br>USA', '+1 (973) 538 8811 ', 'Aug 17-19 2012', 629);
-addLocation(35.91979, -84.088551, 'Fangcon', 'fangcon.org', 'Holiday Inn Knoxville West<br>9134 Executive Park Dr<br>Knoxville, TN 37923<br>USA', '+1 (865) 693-1011', 'Nov 07-09 2014', 231);
+addLocation(52.129813, 11.631281, 'Eurofurence', 'eurofurence.org', 'Maritim Hotel Magdeburg<br>Otto-von-Guericke-Straße 87<br>39104 Magdeburg<br>Germany', '+49 (0) 3915949-0', 'Aug 18-23 2015', 1376);
+addLocation(37.247901,-93.259639, 'F3 Convention', 'www.f3con.com', 'Lamplighter Inn & Suites, North<br>2820 N Glenstone Ave<br>Springfield, MO 65803<br>USA', '+1 (417) 869-3900', 'Nov 20-23 2014', 55);
+addLocation(40.703546, -74.184279, 'FA: United', 'faunited.org', 'Hanover Marriott<br>1401 Rt 10 E<br>Whippany, NJ 07981<br>USA', '+1 (973) 538-8811 ', 'Sep 11-13 2015', 707);
+addLocation(35.91979, -84.088551, 'Fangcon', 'fangcon.org', 'Holiday Inn Knoxville West<br>9134 Executive Park Dr<br>Knoxville, TN 37923<br>USA', '+1 (865) 693-1011', 'Nov 7-9 2014', 302);
 addLocation(45.880449, -78.564606, 'Feral!', 'campferal.org', 'Camp Arowhon<br>Algonquin Park, Ontario P1H 2G6<br>Canada', '+1 (705) 633-5651', 'Aug 24-28 2012', 94);
 addLocation(62.02209, 30.0185, 'FinFur', 'ffsc.finfur.net', '', '', 'Jul 11-15 2012');
 addLocation(35.454262,139.638556, 'Fullmoff', 'www.fullmoff.com', 'Yokohama World Porters<br>2-2-1 Shinko, Naka-ku, <br>Yokohama, Kanagawa <br>Japan', '', 'Oct 25 2014', 0);
+addLocation(43.027227, -88.108102, 'Fur Squared', 'http://www.fursquared.com/', 'Sheraton Milwaukee Brookfield Hotel<br>375 S Moorland Rd<br>Brookfield, WI 53005<br>USA', '+1 (262) 364-1100', 'Feb 27- Mar 1 2015', 415);
 addLocation(-41.239835,174.980063, 'FurcoNZ', 'www.furconz.org.nz', 'Brookfield Outdoor Education Centre<br>Wainuiomata<br>Wellington<br>New Zealand', '', 'Feb 6-9 2014', 50);
-addLocation(-28.00041, 153.4264, 'FurDU', 'www.furrydownunder.com', 'Vibe Hotel Gold Coast<br>42 Ferny Avenue,<br>Surfers Paradise, QLD 4217<br>Australia', '', 'Apr 27-29 2012', 246);
-addLocation(53.541723, -113.625262, 'Fur-eh!', 'fureh.ca', 'Hilton Garden Inn<br>17610 Stony Plain Road<br>Edmonton, Alberta, T5S 1A2<br>Canada', '+1 (780) 443-2233', 'May 4-6 2012', 200);
+addLocation(-27.997818, 153.429297, 'FurDU', 'www.furdu.com', 'Outrigger Hotel Surfers Paradise<br>22 View Avenue,<br>Surfers Paradise, QLD 4217<br>Australia', '', 'May 1-3 2015', 563);
+addLocation(53.541723, -113.625262, 'Fur-eh!', 'fureh.ca', 'Hilton Garden Inn<br>17610 Stony Plain Road<br>Edmonton, Alberta, T5S 1A2<br>Canada', '+1 (780) 443-2233', 'May 8-10 2015', 200);
 addLocation(-33.859972, 151.211111, 'FurJam', 'www.furjam.org', ' Forresters Hotel<br>336 Riley Street<br>Surry Hills NSW 2010<br>Australia', '(02) 9212 3035', 'Oct 7-9 2012');
+addLocation(45.582910, -122.575732, 'Furlandia', 'furlandia.org/', 'Sheraton Hotel at PDX Airport <br>8235 NE Airport Way<br>Portland, Oregon 97220<br>USA', '+1 (503) 281-2500', 'May 22-24 2015', 348);
 addLocation(39.983333, -82.983333, 'Furlaxation', 'furlaxation.org', 'Columbus, Ohio', '', 'Sep 12-14 2014', 241); //attendance for 2012
-addLocation(28.542401, -81.347945, 'Furloween', 'www.furhold.org/furloween', 'Orlando Elks Lodge<br>12 North Primrose Dr.<br>Orlando, Florida 32803<br>USA', '+1 (407) 282-3900', 'Oct 27 2012', 148);
-addLocation(43.689551, -79.586356, 'Furnal Equinox', 'furnalequinox.com', 'Sheraton Toronto Airport Hotel & Conference Centre<br>801 Dixon Road<br>Toronto, ON M9W 1J3<br>Canada', '+1 (416) 675-6100', 'Mar 8-10 2013', 750);
+addLocation(28.542401, -81.347945, 'Furloween', 'www.furhold.org/furloween', 'Orlando Elks Lodge<br>12 North Primrose Dr.<br>Orlando, Florida 32803<br>USA', '+1 (407) 282-3900', 'Oct 25 2014', 188);
+addLocation(43.689551, -79.586356, 'Furnal Equinox', 'furnalequinox.com', 'Sheraton Toronto Airport Hotel & Conference Centre<br>801 Dixon Road<br>Toronto, ON M9W 1J3<br>Canada', '+1 (416) 675-6100', 'Mar 13-15 2015', 750);
+addLocation(41.604459, -72.700497, 'Furpocalypse', 'furpocalypse.org', 'Crowne Plaza Cromwell<br>100 Berlin Road<br>Cromwell, CT 06416<br>USA', '+1 (888) 233-9527', 'Oct 30-Nov 1 2015', 1200);
+addLocation(43.156351,-77.610020, 'FurryCon', 'www.furrycon.com/', 'Radisson Riverside Rochester<br>120 E Main st<br>Rochester, New York<br>USA', '+1 (585) 546-6400', 'May 21-25 2015', 0);
 addLocation(28.401971, -80.618792, 'Furry Cruise', 'www.furrycruise.com', 'Royal Caribbean\'s <i>Freedom of the Seas</i><br>Port Canaveral, Florida<br>USA', '+1 (734) 340-4553', 'Nov 9-16 2014', 24);
-addLocation(32.956825, -96.822896, 'Furry Fiesta', 'www.furryfiesta.org', 'Intercontinental Dallas Hotel<br>15201 Dallas Pkwy<br>Addison, Texas 75001<br>USA', '+1 (972) 386-6000', 'Feb 21-23 2014', 1492);
-addLocation(44.86092, -93.23923, 'Furry Migration', 'www.furrymigration.org', 'Ramada Mall of America<br>American Blvd E<br>Bloomington, MN 55425<br>USA', '+1 952-854-3411', 'Sep 12-14 2014');
+addLocation(32.956825, -96.822896, 'Furry Fiesta', 'www.furryfiesta.org', 'Intercontinental Dallas Hotel<br>15201 Dallas Pkwy<br>Addison, Texas 75001<br>USA', '+1 (972) 386-6000', 'Feb 20-22 2015', 1884);
+addLocation(44.86092, -93.23923, 'Furry Migration', 'www.furrymigration.org', 'Ramada Mall of America<br>American Blvd E<br>Bloomington, MN 55425<br>USA', '+1 952-854-3411', 'Aug 28-30 2015', 543);
 addLocation(33.761999, -84.383352, 'Furry Weekend Atlanta', 'furryweekend.com', 'Atlanta Marriott Marquis<br>265 Peachtree Center Ave NE<br>Atlanta, GA 30303<br>USA', '+1 (404) 521-0000', 'Apr 9-12 2015', 2488);
-addLocation(52.775556,   6.801771, 'Furry Weekend Holland', 'furryweekend.nl', 'Het Labyrint<br>Brink 9 7841 CE<br>Sleen<br>Netherlands', '', 'Mar 15-18 2013', 57);
-addLocation(51.40328, 5.95940, 'Furs on Fire', 'www.fursonfire.eu', 'Evertsoord, The Netherlands', '', 'Dec 29-Jan 1 2013', 66);
+addLocation(52.775556,   6.801771, 'Furry Weekend Holland', 'furryweekend.nl', 'Het Labyrint<br>Brink 9 7841 CE<br>Sleen<br>Netherlands', '', 'Mar 28-31 2014', 57);
+//addLocation(51.40328, 5.95940, 'Furs on Fire', 'www.fursonfire.eu', 'Evertsoord, The Netherlands', '', 'Dec 29-Jan 1 2013', 66); //ended in 2013.
 addLocation(52.588333, 14.65, 'Furstock', 'www.polfurs.org', '', '', 'Jul 31-Aug 2 2014', 45);
 addLocation(57.05, 9.916667, 'Furtastic', 'www.furtastic.dk', 'Denmark', '', 'Jul 2012?');
-addLocation(37.330294,-121.888375, 'Further Confusion', 'furtherconfusion.org', 'San Jose Mariott<br>301 South Market Street<br>San Jose, CA 95113<br>USA', '+1 408-280-1300', 'Jan 16-20 2014', 3380);
+addLocation(37.330294,-121.888375, 'Further Confusion', 'furtherconfusion.org', 'San Jose Mariott<br>301 South Market Street<br>San Jose, CA 95113<br>USA', '+1 408-280-1300', 'Jan 15-19 2015', 3560);
 addLocation(51.388923,-115.784912, 'Furthest North', 'furthestnorth.ca', 'Deer Creek Provincial Recreation Area<br>Alberta<br>Canada', '+1 (403) 637-2229', 'Aug 2-5 2013', 63);
+addLocation(53.407281,-2.989201, 'FurVention', 'furvention.org.uk', 'Aloft Liverpool<br>1 North John Street<br>Liverpool, L2 5QW<br>United Kingdom', '+44 151 294 3970', '23-25 Jan 2015');
 addLocation(35.559328, 139.723602, 'Fur-st', 'fur-st.com', '志ら井<br>1 Chome-20-28 Minamikamata<br>Ota, Tokyo<br>Japan', '', 'Oct 18 2014', 144);
-addLocation(39.283286,-84.466442, 'Fur Reality', 'www.furreality.org', 'Atrium Hotel<br>30 Tri-County Parkway<br>Cincinnati, OH 45246<br>USA', '513 771 7171', 'Oct 10-12, 2014');
-addLocation(39.494658,-76.66367, 'Fur the \'More', 'furthemore.org', 'Hunt Valley Inn<br>245 Shawan Rd<br>Baltimore, MD<br>USA', '+1 (410) 785-7000', 'Mar 14-16 2014', 714);
-addLocation(51.93180, 19.407, 'Futerkon', 'futerkon.pl', 'Municipal Cultural Center<br>95-001 Dzierżązna<br>Poland', '42 717 84 66', 'Aug 8-11 2013', 93);
+addLocation(39.283286,-84.466442, 'Fur Reality', 'www.furreality.org', 'Atrium Hotel<br>30 Tri-County Parkway<br>Cincinnati, OH 45246<br>USA', '513 771 7171', 'Oct 10-12 2014', 316);
+addLocation(38.930864,-77.245601, 'Fur the \'More', 'furthemore.org', 'Sheraton Premiere at Tysons Corner<br>8661 Leesburg Pike<br>Vienna, VA<br>USA', '+1 (410) 785-7000', 'May 29-31 2015', 714);
+addLocation(51.93180, 19.407, 'Futerkon', 'futerkon.pl', 'Municipal Cultural Center<br>95-001 Dzierżązna<br>Poland', '42 717 84 66', 'Aug 20-23 2014', 93);
 addLocation(49.8954237, 5.080949, 'Fuzzcon', 'fuzzcon.be', 'Au pays de mon pere<br>Rue des Combattants 1<br>6850 Paliseul<br>Belgium', '', 'Aug 22-25 2013', 14);
+addLocation(42.404360,-86.243710, 'Great Lakes Fur Con', 'http://greatlakesfurcon.com/', 'Holiday Inn Express South<br>1741 Phoenix Rd<br>South Haven, MI 49090<br>USA', '+1 (269) 637-8800', 'May 22-24 2015', 264);
 addLocation(47.35016, 7.76123, 'Golden Leaves Con', 'glc.furry.ch', 'Baselbieter Chinderhus<br>Bachtalenstrasse 10<br>4438 Langenbruck<br>Switzerland', '062 390 12 24', 'Nov 15-18 2012');//
 //addLocation(52.505369,  13.353882, 'Herbstcon', 'herbstcon.de', 'Sozialistische Jugend Deutschlands – Die Falken<br>Haus am Lützowplatz<br>Lützowplatz 9<br>10785 Berlin<br>Germany', '+49 030-261030-0', 'Oct 11-14 2012', 20);//Invite only
 addLocation(49.616848,   8.826463, 'H-Con', 'h-con.afc-group.org', 'Gerhart-Hauptmann-Haus<br>Außerhalb 1-3<br>64689 Grasellenbach-Scharbach<br>Germany', '+49 06 2 07/1 22-1', 'Oct 3-7 2012', 50);
-addLocation(49.26716,-123.010021, 'Howloween', 'howloween.ca', 'Burnaby Executive Hotel<br>4201 Lougheed Highway<br>Burnaby, BC<br>Canada', '', 'Nov 10-12 2011', 182);
+addLocation(49.26716,-123.010021, 'Howloween', 'howloween.ca', 'Burnaby Executive Hotel<br>4201 Lougheed Highway<br>Burnaby, BC<br>Canada', '', 'Nov 2014', 202);
 addLocation(38.866200,  -0.406165, 'Ibercamp', 'ibercamp.es', 'Salem, Valencia<br>Spain', '', 'Nov 24-25 2012');
-addLocation(39.768971, -86.160601, 'IndyFurCon', 'indyfurcon.com', 'Sheraton at Keystone Crossing<br>8787 Keystone Crossing<br>Indianapolis, IN 46240<br>USA', '+1 (317) 846-2700', 'Aug 9-11 2013', 482);
+addLocation(39.768971, -86.160601, 'IndyFurCon', 'indyfurcon.com', 'Sheraton at Keystone Crossing<br>8787 Keystone Crossing<br>Indianapolis, IN 46240<br>USA', '+1 (317) 846-2700', 'Aug 14-16 2015', 527);
 addLocation(34.743463, 137.370965, 'Japan Meeting of Furries', 'www.j-mof.org', 'Loisir Hotel Toyohashi<br>141 Fujisawacho<br>Toyohashi, Aichi<br>Japan', '', 'Jan 10-11 2015', 232);
 addLocation(35.3334755,139.9891955, 'Kemocon', 'www.kemocon.com', 'Kasuza Akademia Hall<br>2 Chome-3-9 Kazusakamatari<br>Kisarazu, Chiba Prefecture<br>Japan', '', 'Nov 22-23 2014', 420);
-addLocation(34.985692,138.417148, 'Kemono Square', 'eixinweb.jp/kemono-square.html', 'Shizuoka Convention & Arts Center "Granship" 7F<br>79-4 Ikeda, Suruga Ward, Shizuoka City<br>Japan', '', 'Jun 7 2014', 81); //only attendees signed up from Twipla
+addLocation(34.985692,138.417148, 'Kemono Square', 'eixinweb.jp/kemono-square.html', 'Shizuoka Convention & Arts Center "Granship" 7F<br>79-4 Ikeda, Suruga Ward, Shizuoka City<br>Japan', '', 'Jun 6 2015', 81); //only attendees signed up from Twipla
 addLocation(35.654685,139.761096, 'Kemoket', 'kemoket.com', 'Tokyo Metropolitan Industrial Trade Center Hamamastucho-kan<br>1 Chome-7-8 Kaigan<br>Minato, Tokyo<br>Japan', '', 'Apr 29 2014', 0);  //259 vendors from 246 circles confirmed for 2014
-addLocation(34.6693, 135.476103, 'Kemoket', 'kemoket.com', 'Sky Hall D Block<br>Osaka Dome<br>Osaka<br>Japan', '', 'Oct 13 2013', 0);
+addLocation(34.6693, 135.476103, 'Kemoket', 'kemoket.com', 'Sky Hall D Block<br>Osaka Dome<br>Osaka<br>Japan', '', 'Oct 13 2014', 0);
 addLocation(35.1584991,136.9298391, 'Kigukemo', 'kigukemo.jp', 'Nagoya Trade & Industry Center <br>2-6-3 Fukiage<br>Chikusa Ward, Nagoya, Aichi<br>Japan ', 'Phone Number', 'Aug 23, 2014', 91); //only attendees signed up from Twipla
 addLocation(47.336284,  12.855555, 'Lakeside Furs', 'lakesidefurs.at', 'Zell am See<br>Talstr. 159, 5700 Thumersbach<br>Austria', '+43 (0)6542/73734', 'Jul 19-26 2014', 40);
-addLocation(28.333938, -81.587638, 'Megaplex', 'megaplexcon.org', 'Worldgate Resort Hotel<br>3011 Maingate Lane<br>Kissimmee, FL 34747-2302<br>USA', '+1 (866) 705-7676', 'Jul 27-29 2012', 553);
-addLocation(34.966572, -89.791608, 'Mephit Furmeet', 'mephitfurmeet.org', 'Whispering Woods Hotel & Conference Center<br>11200 Goodman Rd<br>Olive Branch, MS 38654-4212<br>USA', '+1 (662) 895-2941', 'Aug 30-Sep 1 2013', 548);
-addLocation(50.825484,   7.887068, 'Mephit Mini Con', 'mmc.furcon.de', 'Freusburg, Seigen<br>Germany', '', 'May 9-12 2013', 200);
+addLocation(28.455824, -81.306028, 'Megaplex', 'megaplexcon.org', 'Orlando Airport Marriott<br>7499 Augusta National Drive<br>Orlando, FL 32822<br>USA', '+1 (407) 851-9000', 'Jul 31- Aug 2 2015', 1281);
+addLocation(34.966572, -89.791608, 'Mephit Furmeet', 'mephitfurmeet.org', 'Whispering Woods Hotel & Conference Center<br>11200 Goodman Rd<br>Olive Branch, MS 38654-4212<br>USA', '+1 (662) 895-2941', 'Sep 4-Sep 6 2015', 548);
+addLocation(50.825484,   7.887068, 'Mephit Mini Con', 'mmc.furcon.de', 'Freusburg, Seigen<br>Germany', '', 'Apr 30-May 3 2015', 200);
 addLocation(35.6568544, 139.7351909, 'Metamore Generation V', 'www.metamor.jp/', 'Village<br>B1F, Fukao Bldg. 1-4-5 Azabu-juban, Minato-ku, Tokyo, Japan', '', 'Oct 5 2013', 0);
-addLocation(41.981284, -87.859078, 'Midwest FurFest', 'furfest.org', 'Hyatt Regency O\'Hare<br>9300 Bryn Mawr Avenue<br>Rosemont, Illinois 60018<br>USA', '+1 (847) 696-1234', 'Nov 16-18 2012', 2600);
-addLocation(35.7549142,139.7366338, 'Mofukai', 'twipla.jp/events/84157', '北とぴあ 14F　Sky Hall<br>1 Chome-11 Oji Kita Tokyo <br>Japan', '', 'May 5 2014', 54); //only attendees signed up from Twipla - 4 people over venue capacity
-addLocation(40.105846, -83.017244, 'Morphicon', 'morphicon.org', 'Holiday Inn Columbus-Worthington<br>7007 N. High Street<br>Worthington, Ohio 43085<br>USA', '+1 (614) 436-0700', 'May 3-6 2012', 275);
-addLocation(39.65924 , -75.75286, 'New Year\'s Furry Ball', 'www.ticketderby.com/innerindex.php?eventid=3505', 'Embassy Suites Newark-Wilmington/South<br>854 S College Ave<br>Newark, DE 19713<br>USA', '(302) 368-8000', 'Dec 30-Jan 1 2011', 146) // Was replaced by Furstivus in 2012, but planned to resume for 2013
-addLocation(59.166046, 18.13522, 'NordicFuzzCon', 'nordicfuzzcon.org', 'Quality Hotel Winn Haninge<br>Rudsjoterassen 3<br>SE 136 40  Handen<br>Sweden', '', 'Mar 28-31 2013', 175);
-addLocation(35.933888, -98.429604, 'Oklacon', 'oklacon.com', 'Roman Nose State Park<br>Rt 1 Box 2-2<br>Watonga, Oklahoma 73772<br>USA', '+1 (580) 623-4215', 'Oct 17-22 2012', 300);
+addLocation(41.981284, -87.859078, 'Midwest FurFest', 'furfest.org', 'Hyatt Regency O\'Hare<br>9300 Bryn Mawr Avenue<br>Rosemont, Illinois 60018<br>USA', '+1 (847) 696-1234', 'Dec 5-7 2015', 3904);
+addLocation(35.7549142,139.7366338, 'Mofukai', 'twipla.jp/events/84157', '北とぴあ 14F　Sky Hall<br>1 Chome-11 Oji Kita Tokyo <br>Japan', '', 'May 5 2014', 66); //only attendees signed up from Twipla - 6 people over venue capacity
+addLocation(40.105846, -83.017244, 'Morphicon', 'morphicon.org', 'Holiday Inn Columbus-Worthington<br>7007 N. High Street<br>Worthington, Ohio 43085<br>USA', '+1 (614) 436-0700', 'Apr 30-May 3 2015', 317);
+addLocation(42.443047, -83.435667, 'Motor City Furry Con', 'motorcityfurrycon.org/', '21111 Haggerty Road<br>Novi, MI 48375<br>USA', '+1 (248) 349-4000', 'Mar 27-29 2015', 967);
+addLocation(39.65924 , -75.75286, 'New Year\'s Furry Ball', 'www.ticketderby.com/innerindex.php?eventid=3505', 'Embassy Suites Newark-Wilmington/South<br>854 S College Ave<br>Newark, DE 19713<br>USA', '(302) 368-8000', 'Dec 31 2015-Jan 1 2016', 211) 
+addLocation(58.9143217, 17.953672, 'NordicFuzzCon', 'nordicfuzzcon.org', 'Utsikten Meetings Hotel<br>Nynäshamn<br>Sweden', '', 'Mar 3-6 2015', 382);
+addLocation(35.933888, -98.429604, 'Oklacon', 'oklacon.com', 'Roman Nose State Park<br>Rt 1 Box 2-2<br>Watonga, Oklahoma 73772<br>USA', '+1 (580) 623-4215', 'Oct 29-Nov 1 2014', 352);
 addLocation(-31.952222, 115.858889, 'Perthfur Gathering', 'gathering.perthfurs.net', 'Perth, Western Australia', '', 'Aug 13 2011', 76);//"3rd qtr, 2010"
-addLocation(47.444579,-122.293807, 'RainFurrest', 'rainfurrest.org', 'Hilton Seattle Airport<br>17620 International Boulevard<br>Seattle, WA 98188<br>USA', '+1 (206) 244-4800', 'Sep 27-30 2012', 1424);
-addLocation(-27.467778, 153.027778, 'RivFur', 'www.rivfur.org', 'Brisbane, Queensland, Australia', '', 'Jun 29-Jul 2 2012', 50);
+addLocation(47.444579,-122.293807, 'RainFurrest', 'rainfurrest.org', 'Hilton Seattle Airport<br>17620 International Boulevard<br>Seattle, WA 98188<br>USA', '+1 (206) 244-4800', 'Sep 24-27 2015', 1424);
+addLocation(-27.467778, 153.027778, 'RivFur', 'www.rivfur.org', 'Brisbane, Queensland, Australia', '', 'August 8-10, 2014', 180);
 addLocation(34.6701,  -86.577759, 'Rocket City FurMeet', 'rcfm.net', 'Hilton Garden Inn Huntsville South<br>301 Boulevard South SW<br>Huntsville, Alabama 35802<br>USA', '+1 (256) 881-4170', 'May 24-26 2013', 242);
-addLocation(39.762235,-104.900293, 'Rocky Mountain Fur Con', 'rockymountainfurcon.org', 'Doubletree Hotel Denver<br>3203 Quebec Street<br>Denver, Colorado 80207<br>USA', '+1 (303) 321-3333', 'Aug 2-4 2013', 863);
-addLocation(56.050627,36.823576, 'Rusfurrence', 'rusfurrence.ru', 'РАН "Авантель Клаб Истра" (RAS "Avantel Club Istra")<br>ЗИстринское Водохранилище (Istra Reservoir), Moscow<br>Russian Federation', '', 'Feb 5-10 2013', 286);
-addLocation(57.478307, -4.22672, 'ScotiaCon', 'www.scotiacon.com', 'Mercure Inverness Hotel<br>Church Street<br>Inverness, IV1 1QY<br>Inverness-shire, United Kingdom', '', 'Jul 27-30 2012', 123);
+addLocation(39.762235,-104.900293, 'Rocky Mountain Fur Con', 'rockymountainfurcon.org', 'Doubletree Hotel Denver<br>3203 Quebec Street<br>Denver, Colorado 80207<br>USA', '+1 (303) 321-3333', 'Aug 7-9 2015', 863);
+addLocation(56.050627,36.823576, 'Rusfurrence', 'rusfurrence.ru', 'РАН "Авантель Клаб Истра" (RAS "Avantel Club Istra")<br>ЗИстринское Водохранилище (Istra Reservoir), Moscow<br>Russian Federation', '', 'Feb 4-8 2015', 286);
+addLocation(57.478307, -4.22672, 'ScotiaCon', 'www.scotiacon.com', 'Mercure Inverness Hotel<br>Church Street<br>Inverness, IV1 1QY<br>Inverness-shire, United Kingdom', '', 'Nov 7-9 2014', 123);
 addLocation(-26.201, 28.046, 'South Afrifur meet', 'forum.zafur.co.za/viewtopic.php?f=53&t=1330', '', '', 'Dec 2012?', 0);
-addLocation(40.769163,-111.897349, 'Unthrocon', 'www.unthrocon.org', ' Salt Lake City Radisson Hotel<br>215 W South Temple<br>Salt Lake City, Utah 84101<br>USA', '+1 (801) 531-7500', '30 Aug-1 Sep 2013', 126);
-addLocation(49.266323,-123.011509, 'VancouFur', 'vancoufur.ca', 'Executive Hotel & Conference Centre Burnaby<br>4201 Lougheed Hwy<br>Burnaby, British Columbia, V5C 3Y6<br>Canada', '', 'Mar 1-3 2013', 479);
-addLocation(45.499474, -73.562801, 'What The Fur', 'whatthefur.ca', 'Delta Centre-Ville<br>777 University Street<br>Montreal, Quebec<br>H3C 3Z7, Canada', '+1 (514) 879-1370', 'May 17-19 2013', 282);
-addLocation(40.538786, -79.830565, 'Western Pennsylvania Furry Weekend', 'wpafw.org', 'Quality Inn Pittsburgh North<br>2801 Freeport Road<br>Pittsburgh, Pennsylvania 15238<br>USA', '+1 (412) 828-9400', 'Sep 28-30 2012', 116);
-addLocation(35.042611, -95.317672, 'Wild Nights', 'wildnights.org', 'Robbers Cave State Park<br>Wilburton, Oklahoma 74578<br>USA', '+1 (918) 465-2565', 'Apr 25-29 2013', 122);
-addLocation(50.456309, 30.504819, 'WUFF', 'wuff.org.ua/2013', 'Kiev, Ukraine', '', 'May 9-12 2013', 164)
+addLocation(40.769163,-111.897349, 'Unthrocon', 'www.unthrocon.org', ' Salt Lake City Radisson Hotel<br>215 W South Temple<br>Salt Lake City, Utah 84101<br>USA', '+1 (801) 531-7500', 'Oct 31-Nov 2 2014', 126);
+addLocation(49.266323,-123.011509, 'VancouFur', 'vancoufur.ca', 'Executive Hotel & Conference Centre Burnaby<br>4201 Lougheed Hwy<br>Burnaby, British Columbia, V5C 3Y6<br>Canada', '', 'Mar 5-8 2015', 600);
+addLocation(45.499474, -73.562801, 'What The Fur', 'whatthefur.ca', 'Delta Centre-Ville<br>777 University Street<br>Montreal, Quebec<br>H3C 3Z7, Canada', '+1 (514) 879-1370', 'May 22-24 2015', 303);
+addLocation(40.4612,-79.7509, 'Western Pennsylvania Furry Weekend', 'wpafw.org', ' North Park Lodge, N Ridge Dr<br>Allison Park, PA 15101<br>USA', '+1 (724) 327-0338', 'Oct 9-11 2015', 132);
+addLocation(35.042611, -95.317672, 'Wild Nights', 'wildnights.org', 'Robbers Cave State Park<br>Wilburton, Oklahoma 74578<br>USA', '+1 (918) 465-2565', 'Apr 23-28 2015', 302);
+addLocation(50.456309, 30.504819, 'WUFF', 'wuff.org.ua/2015', 'Hotel «Sofiyevsky Posad»<br>81/2 Kyivs\'ka Str., Sofiivs\'ka Borshchahivka<br>Kiev, Ukraine', '', 'May 6-10 2015', 260)
 addLocation(44.520806, 11.401609, 'Zampacon', 'zampacon.forumfree.it', 'Ostello SanSisto<br>via Viadagola 5<br>Bologna, 40127<br>Italy', '', 'Sep 3-7 2014', 39);
 addLocation(47.503095, 12.190969, 'Zillercon', '', 'Wörgl, Tyrol<br>Austria', '', 'Jan 25-Feb 1 2014', 40);
 addLocation(50.773040, 15.311701, 'ZodiaCon', 'zodiacon.org', 'Hotel Emilka<br>Na Novině 401<br>468 61 Desná III<br>Czech Republic', '+420 483 300 335', 'May 30-June 2, 2014', 74);
+addLocation(-23.593948,-46.585204, 'Furboliche 4', 'furboliche.com.br', 'Pysta 10, Central Plaza Shopping<br>Av. Dr. Francisco Mesquita, 1000<br>S&atilde;o Paulo (SP)<br>Brazil', '','October 31st, 2015', 149);
+addLocation(37.686355, -97.342702, 'Central Plains Furcon', 'cpfurcon.com', 'Drury Plaza Hotel Broadview<br>400 West Douglas Ave<br>Wichita, KS 67202<br>USA', '', 'Nov 6-10 2014', 100)
 
 // convert textual dates to numbers for sorting.
 for(var i = 0, meet; meet = meets[i]; i++){
