@@ -89,6 +89,7 @@ addLocation(40.105846, -83.017244, 'AnthrOhio', 'morphicon.org', 'Holiday Inn Co
 //addLocation(-37.891950, -57.832850, 'Animales Sueltos', 'furrycamp.com.ar', 'Camping \'La Serranita\'<br>barrio Colinas Verdes<br>Mar del Plata<br>Argentina', '', 41);
 addLocation(42.353979, -71.105356, 'Anthro New England', 'www.anthronewengland.org', 'Hyatt Regency Cambridge, Overlooking Boston<br>575 Memorial Dr<br>Cambridge, MA<br>USA', '1(617) 492-1234', 'Jan 21-Jan 24 2016', 0);
 addLocation(40.444334, -79.995532, 'Anthrocon', 'www.anthrocon.org', 'Westin Convention Center Pittsburgh<br>1000 Penn Avenue<br>Pittsburgh, Pennsylvania 15222<br>USA', '+1 (412) 281-3700', 'Jun 30-Jul 3 2016', '5861');
+addLocation(-23.970691,-46.329962, 'Brasil FurFest', 'brasilfurfest.com.br', 'Hotel Mercure Santos<br>Av. Washington Luiz, 565<br>Santos (SP)<br>Brazil', '','Sep 9-11, 2016');
 addLocation(52.597652, 13.22226, 'BerliCon', 'www.berlicon.org', 'Zeltlagerplatz e.V.<br>Rallenweg 4,13505 Berlin-Heiligensee<br>Germany', '', 'Jun 18-21 2015', 89);
 addLocation(39.523177, -119.78106, 'Biggest Little Fur Con', 'www.biggestlittlefurcon.org', 'Grand Sierra Resort<br>2500 East 2nd Street<br>Reno, Nevada 89595<br>USA', '+1 (77) YEAH-BLFC', 'May 12-15 2016', '1442');
 //addLocation(61.599498,   9.750860, 'CabinCon', 'swandog.livejournal.com', 'Vinstra<br>Norway', '');//not on list, website is private
@@ -97,7 +98,9 @@ addLocation(33.679673,-117.852488, 'Califur', 'califur.com', 'Irvine Marriott<br
 addLocation(43.721056,-121.291552, 'Campfire Tails', 'campfiretails.com', 'Ogden Group Camp C<br>Paulina Lake<br>La Pine, Oregon<br>USA', '', 'Aug 4-Aug 8 2016', 143);
 //addLocation(44.858188, -93.221054, 'Cat Days', 'www.mnfurs.org/cat-days', 'Crowne Plaza Hotel and Suites<br>Minneapolis International Airport<br>Appletree Square<br>Bloomington, MN 55425<br>USA', '+1 877-859-5095', 'Aug 3-4 2012');
 //addLocation(38.9439, -95.3385, 'Central Midwest Furmeet', 'cmfurmeet.webs.com', ' Bloomington West Group Camp at Clinton Lake near Lawrence, Kansas', '', 'Sep 14-16 2012', 22);
+addLocation(37.686355, -97.342702, 'Central Plains Furcon', 'cpfurcon.com', 'Drury Plaza Hotel Broadview<br>400 West Douglas Ave<br>Wichita, KS 67202<br>USA', '', 'Nov 5-8 2015', 100)
 addLocation(49.638649,  15.298977, 'ČeSFuR', 'www.cesfur.org', 'Hotel Luna<br>Kouty 77<br>584 01 Kouty<br>Czech Republic', '', 'Jun 24-28 2015', 107);
+addLocation(23.061687, 113.296423, 'China National Furry Party', 'www.fb.com/CNFP2015', ', Guangzhou<br>China', '', 'Jul 8-19 2015', 40);
 addLocation(50.94149, 6.94651, 'Cologne Furdance', 'www.cologne-cfd.de', 'Zeughaus24, Zeughausstraße 24, 50667 Köln, Germany', '', 'Jul 30 2016', 201); //Colonge Fur-Dance, Germany, June/November
 addLocation(42.930358, -81.218609, 'Condition', 'www.conditionfurry.ca', 'Four Points Sheraton<br>1150 Wellington Road South<br>London, Ontario N6E 1M3<br>Canada', '+1 (519) 681-0600', 'Aug 1-3 2014', 251);
 addLocation(-37.825497,144.951725, 'ConFurgence', 'confurgence.com', 'Hilton South Wharf<br>2 Convention Centre Place<br>South Wharf, Melbourne<br>Australia 3006', '+61-3-9027-2000', 'Jan 8-10 2016', 544);
@@ -154,6 +157,7 @@ addLocation(38.866200,  -0.406165, 'Ibercamp', 'ibercamp.es', 'Salem, Valencia<b
 addLocation(25.034847, 121.546979, 'Infurnity', 'infurnity.com', 'SMAJO House<br>Ln. 279, Sec. 1, Fuxing S. Rd.<br>Da’an Dist., Taipei', '', 'Oct 31 2015', 0); // first Taiwan furcon
 addLocation(39.768971, -86.160601, 'IndyFurCon', 'indyfurcon.com', 'Sheraton at Keystone Crossing<br>8787 Keystone Crossing<br>Indianapolis, IN 46240<br>USA', '+1 (317) 846-2700', 'Aug 26-28 2016', 527);
 addLocation(34.743463, 137.370965, 'Japan Meeting of Furries', 'www.j-mof.org', 'Loisir Hotel Toyohashi<br>141 Fujisawacho<br>Toyohashi, Aichi<br>Japan', '', 'Jan 8-10 2016', 400);
+addLocation(25.00814, 121.53604, 'Kemono & Jingai Only 2', 'jk2016.furry.tw', 'Jhongjheng Hall<br>88 Tingzhou Road Section 4<br>Wenshan District<br>Taipei City 116<br>Taiwan<br>116台北市文山區汀州路四段88號', '', 'Jul 16 2016', null); // The name of the hall at http://en.ntnu.edu.tw/gongguan-campus.php#tab-1 seems to be in Tongyong Pinyin, while the street address seems to be in Hanyu Pinyin?
 addLocation(35.3334755,139.9891955, 'Kemocon', 'www.kemocon.com', 'Kasuza Akademia Hall<br>2 Chome-3-9 Kazusakamatari<br>Kisarazu, Chiba Prefecture<br>Japan', '', 'Nov 22-23 2014', 420);
 addLocation(34.985692,138.417148, 'Kemono Square', 'eixinweb.jp/kemono-square.html', 'Shizuoka Convention & Arts Center "Granship" 7F<br>79-4 Ikeda, Suruga Ward, Shizuoka City<br>Japan', '', 'Jun 6 2015', 107);
 addLocation(35.654685,139.761096, 'Kemoket', 'kemoket.com', 'Tokyo Metropolitan Industrial Trade Center Hamamastucho-kan<br>1 Chome-7-8 Kaigan<br>Minato, Tokyo<br>Japan', '', 'Apr 29 2014', 0);  //259 vendors from 246 circles confirmed for 2014
@@ -179,6 +183,7 @@ addLocation(34.6701,  -86.577759, 'Rocket City FurMeet', 'rcfm.net', 'Hilton Gar
 addLocation(39.762235,-104.900293, 'Rocky Mountain Fur Con', 'rockymountainfurcon.org', 'Doubletree Hotel Denver<br>3203 Quebec Street<br>Denver, Colorado 80207<br>USA', '+1 (303) 321-3333', 'Aug 12-14 2016', 863);
 addLocation(56.050627,36.823576, 'Rusfurrence', 'rusfurrence.ru', 'РАН "Авантель Клаб Истра" (RAS "Avantel Club Istra")<br>ЗИстринское Водохранилище (Istra Reservoir), Moscow<br>Russian Federation', '', 'Feb 4-8 2015', 286);
 addLocation(57.478307, -4.22672, 'ScotiaCon', 'www.scotiacon.com', 'Mercure Inverness Hotel<br>Church Street<br>Inverness, IV1 1QY<br>Inverness-shire, United Kingdom', '', 'Nov 7-9 2014', 123);
+addLocation(31.27268, 121.55447, 'Shanghai Furry Summer Festival', 'weibo.com/5383289490', 'Jinqianbao Hotel<br>2866 Yangshupu Rd<br>Shanghai, China<br>中国上海市杨树浦路2866号金钱豹大酒店', '', 'Jul 23 2016', null); // co-located with Shanghai Jingai Only 2016. At the Golden Leopard hotel. Mirror for Weibo account: http://ent.sina.com.tw/weibo/user/5383289490
 addLocation(-26.201, 28.046, 'South Afrifur meet', 'forum.zafur.co.za/viewtopic.php?f=53&t=1330', '', '', 'Dec 2012?', 0);
 addLocation(40.769163,-111.897349, 'Unthrocon', 'www.unthrocon.org', ' Salt Lake City Radisson Hotel<br>215 W South Temple<br>Salt Lake City, Utah 84101<br>USA', '+1 (801) 531-7500', 'Oct 31-Nov 2 2014', 126);
 addLocation(49.266323,-123.011509, 'VancouFur', 'vancoufur.ca', 'Executive Hotel & Conference Centre Burnaby<br>4201 Lougheed Hwy<br>Burnaby, British Columbia, V5C 3Y6<br>Canada', '', 'Mar 3-6 2016', 600);
@@ -190,9 +195,6 @@ addLocation(44.520806, 11.401609, 'Zampacon', 'zampacon.forumfree.it', 'Ostello 
 addLocation(47.503095, 12.190969, 'Zillercon', '', 'Wörgl, Tyrol<br>Austria', '', 'Jan 25-Feb 1 2014', 40);
 addLocation(50.773040, 15.311701, 'ZodiaCon', 'zodiacon.org', 'Hotel Emilka<br>Na Novině 401<br>468 61 Desná III<br>Czech Republic', '+420 483 300 335', 'May 30-June 2, 2014', 74);
 addLocation(-23.668839,-46.577533, 'Furboliche 6', 'furboliche.com.br', 'Bomboliche Extra Anchieta<br>R. García Lorca, 301<br>S&atilde;o Bernardo do Campo (SP)<br>Brazil', '','Dec 3, 2016', 261);
-addLocation(-23.970691,-46.329962, 'Brasil FurFest', 'brasilfurfest.com.br', 'Hotel Mercure Santos<br>Av. Washington Luiz, 565<br>Santos (SP)<br>Brazil', '','Sep 9-11, 2016');
-addLocation(23.061687, 113.296423, 'China National Furry Party', 'www.fb.com/CNFP2015', ', Guangzhou<br>China', '', 'Jul 8-19 2015', 40);
-addLocation(37.686355, -97.342702, 'Central Plains Furcon', 'cpfurcon.com', 'Drury Plaza Hotel Broadview<br>400 West Douglas Ave<br>Wichita, KS 67202<br>USA', '', 'Nov 5-8 2015', 100)
 
 // convert textual dates to numbers for sorting.
 for(var i = 0, meet; meet = meets[i]; i++){
